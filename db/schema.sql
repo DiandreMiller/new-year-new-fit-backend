@@ -22,7 +22,7 @@ CREATE TABLE workouts (
  name TEXT NOT NULL,
  duration TEXT,
  calories_burned NUMERIC NOT NULL,
- user_id INTEGER REFERENCES users (id),
+ user_id INTEGER REFERENCES users (id) ON DELETE CASCADE,
  workout_type TEXT NOT NULL,
  workout TEXT NOT NULL,
  weight_pounds_lifted NUMERIC,

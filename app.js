@@ -20,8 +20,8 @@ app.use('/workouts', userWorkouts)
 
 
 
-app.get("*", (req, res) => {
-    res.status(404).send("Page Not Found");
+app.get("*", (request, response) => {
+    response.status(404).send("Page Not Found");
 });
 
 module.exports = app;
