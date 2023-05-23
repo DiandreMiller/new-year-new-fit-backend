@@ -10,10 +10,10 @@ const userSchema = Joi.object({
         Joi.string().required()
       ),
     weight: Joi.number().required(),
-    workout_type: Joi.string().allow("").optional(),
+    workout_type: Joi.string().optional(),
     gender: Joi.string().required(),
     fitness_level: Joi.string().required(),
-    photo_link: Joi.string().allow("").optional()
+    photo_link: Joi.string().optional()
 })
 
 module.exports = createValidator(userSchema)

@@ -10,7 +10,7 @@ CREATE TABLE users (
  age INTEGER NOT NULL,
  height NUMERIC NOT NULL,
  weight NUMERIC NOT NULL,
- workout_type TEXT NOT NULL,
+ workout_type TEXT,
  gender TEXT NOT NULL,
  fitness_level TEXT NOT NULL,
 --  photo_upload BYTEA,
